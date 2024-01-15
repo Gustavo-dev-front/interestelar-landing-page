@@ -1,0 +1,16 @@
+@import "colors";
+
+$font-primary: "Libre Bodoni", serif;
+$font-secundary: "Poppins", sans-serif;
+
+.title {
+  font-family: $font-primary;
+
+  &--dark {
+    color: $dark;
+  }
+
+  &--light {
+    color: $light;
+  }
+}
