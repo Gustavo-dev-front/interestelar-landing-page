@@ -1,16 +1,16 @@
 @import "colors";
 
-$font-primary: "Libre Bodoni", serif;
-$font-secundary: "Poppins", sans-serif;
+$font-primary: "Poppins", sans-serif;
+$font-secundary: 'Roboto Condensed', sans-serif;
 
 .title {
   font-family: $font-primary;
 
-  &--dark {
-    color: $dark;
-  }
-
   &--light {
     color: $light;
+  }
+
+  &--dark-orange {
+    color: $dark-orange;
   }
 }
