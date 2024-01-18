@@ -1,0 +1,13 @@
+@import "../variables/colors";
+
+.header {
+  background-color: $dark-gray;
+
+  .container {
+    padding: 0;
+  }
+
+  &__logo {
+    height: 80px;
+  }
+}

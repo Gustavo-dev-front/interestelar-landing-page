@@ -1,0 +1,40 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
+.hero {
+  background: url(../../../dist/imgs/hero/hero-desktop.jpg) no-repeat top right /
+    cover;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    min-height: 75vh;
+    height: 100%;
+  }
+
+  &__reviews {
+    &__item {
+      background-color: rgba($color: $dark, $alpha: 0.6);
+      width: 100%;
+      padding: 20px;
+      border-radius: 4px;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      &__stars {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
