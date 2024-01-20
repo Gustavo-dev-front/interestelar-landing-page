@@ -5,6 +5,10 @@
   background: url(../../../dist/imgs/hero/hero-desktop.jpg) no-repeat top right /
     cover;
 
+  .mask {
+    background-color: rgba($color: $dark, $alpha: 0.5);
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,6 +17,10 @@
     gap: 60px;
     min-height: 75vh;
     height: 100%;
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__reviews {
@@ -34,6 +42,28 @@
         img {
           width: 20px;
         }
+      }
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    border-radius: 4px;
+
+    button {
+      display: block;
+      padding: 15px 20px;
+      margin-top: 40px;
+      background-color: $dark-orange;
+      border: none;
+      border-radius: 4px;
+      font-size: 18px;
+      color: $light;
+      cursor: pointer;
+
+      transition: background 0.3s ease;
+      &:hover {
+        background-color: $orange;
       }
     }
   }

@@ -1,0 +1,41 @@
+@import "../variables/colors";
+
+.main-cast {
+  min-height: 50vh;
+  padding: 40px 0;
+
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+
+    &__item {
+      img {
+        border-radius: 4px;
+        max-width: 120px;
+      }
+
+      &__name {
+        display: block;
+        font-size: 18px;
+        color: $dark-gray;
+      }
+      &__character {
+        display: block;
+        font-size: 14px;
+        color: $dark-orange;
+      }
+    }
+  }
+}

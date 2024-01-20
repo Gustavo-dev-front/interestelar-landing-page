@@ -1,6 +1,9 @@
 @import "../variables/colors";
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: $dark-gray;
 
   .container {
@@ -9,5 +12,11 @@
 
   &__logo {
     height: 80px;
+  }
+
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  &--scrolled {
+    box-shadow: 1px 1px 10px 10px rgba($color: $dark, $alpha: 0.5);
+    background-color: rgba($color: $dark-gray, $alpha: 0.9);
   }
 }

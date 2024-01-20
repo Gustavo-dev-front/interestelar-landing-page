@@ -18,10 +18,25 @@ $font-secundary: "Roboto Condensed", sans-serif;
 
   &--medium {
     font-size: 24px;
+    @media only screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  &--big {
+    font-size: 34px;
+
+    @media only screen and (max-width: 576px) {
+      font-size: 28px;
+    }
   }
 
   &--light {
     color: $light;
+  }
+
+  &--orange {
+    color: $orange;
   }
 
   &--dark-orange {

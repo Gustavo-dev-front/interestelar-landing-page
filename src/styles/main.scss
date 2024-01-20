@@ -1,9 +1,17 @@
 @import "reset";
+@import "personal-scrollbar";
 @import "sections/header";
 @import "sections/hero";
+@import "sections/synopsis";
+@import "sections/main-cast";
+@import "sections/footer";
 
 .container {
   max-width: 1280px;
   padding: 15px;
   margin: 0 auto;
+
+  @media only screen and (max-width: 576px) {
+    padding: 10px;
+  }
 }
